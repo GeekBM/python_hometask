@@ -4,4 +4,3 @@ my_list.insert(1, a)
 my_list.sort()
 my_list.reverse()
 print(my_list)
-
