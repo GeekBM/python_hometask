@@ -1,9 +1,10 @@
-a = int(input('Enter 1st number '))
-b = str(input( 'Enter 1st word '))
-c = int(input('Enter 2nd number '))
-d = str(input('Enter 2nd word '))
-list = [a, b, c, d]
-print(list)
-list[0], list[1] = list[1], list[0]
-list[2], list[3] = list[3], list[2]
-print(list)
+a = int(input('Введите количество элементов списка '))
+my_list = [input('Введите первый элемент списка ')]
+i = 1
+while 1 <= i < a:
+    i = i + 1
+    b = input('Введите следующий элемент списка ')
+    print(my_list.append(b))
+print(my_list)
+my_list[::2], my_list[1::2] = my_list[1::2], my_list[::2]
+print(my_list)
