@@ -1,13 +1,5 @@
-file = open('test_1.txt', 'w')
-line = input('Введите текст \n')
-while line:
-    file.writelines(line)
-    line = input('Введите текст \n')
-    if not line:
-        break
-
-file.close()
-file = open('test_1.txt', 'r')
-content = file.readlines()
-print(content)
-file.close()
+with open ('test_1.txt', 'w') as file:
+    input_line = input('Enter text :\n')
+    while input_line:
+        file.write(f'{input_line}\n')
+        input_line = input('Enter text :\n')
