@@ -11,3 +11,4 @@ print(f'Avarage = {av_sal}')
 for k, v in emp.items():
     if v < 20000:
         print(f'{k}: {v}')
+
