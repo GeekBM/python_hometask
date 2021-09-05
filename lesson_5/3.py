@@ -9,5 +9,5 @@ with open('test_3.txt') as file:
 av_sal = sal / len(emp)
 print(f'Avarage = {av_sal}')
 for k, v in emp.items():
-    if v > av_sal:
-        print(f'{k} : {v}')
+    if v < 20000:
+        print(f'{k}: {v}')
