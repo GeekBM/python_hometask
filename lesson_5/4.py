@@ -3,6 +3,7 @@ nums = {'One' : 'Один',
        'Three' : 'Три',
        'Four' : 'Четыре'
 }
+
 with open('test_4.txt') as file, open('test_4_new.txt', 'w') as new_file:
     file_lines = file.readlines()
     for line in file_lines:
